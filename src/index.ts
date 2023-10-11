@@ -4,6 +4,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRouter from "./routes/auth.routes";
+import config from "config";
 
 const app = express();
 
@@ -60,9 +61,7 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
         message: err.message,
     });
 });
-const port = process.env.PORT as unknown as number || 3000;
-
-
+const port = config.get<number>("port");
 app.listen(port, () => {
     console.log(`Server started on port: ${port}`);
 });
