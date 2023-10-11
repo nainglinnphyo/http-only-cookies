@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. *
+/* Modules */
+    "module": "commonjs",
+    /* Specify what module code is generated. */
+    "rootDir": "./",
+    /* Specify the root folder within your source files. */
+    "baseUrl": "./",
+    /* Specify the base directory to resolve non-relative module names. */
+    /* JavaScript Support */
+    "allowJs": true,
+    /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
+    "checkJs": true,
+    /* Enable error reporting in type-checked JavaScript files. */
+    "outDir": "./dist",
+    /* Specify an output folder for all emitted files. */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    /* Type Checking */
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "skipLibCheck": true,
+    "paths": {
+//      "@app/*": [
+      //        "./src/*"
+      //      ],
+      //      "@middlewares/*": [
+      //        "./src/middlewares/*"
+      //      ],
+      //      "@controllers/*": [
+      //        "./src/controllers/*"
+      //      ],
+      //      "@routes/*": [
+      //        "./src/routes/*"
+      //      ],
+      //      "@dto/*": [
+      //        "./src/dto/*"
+      //      ]
+    }
+  },
+  "include": [
+    "./src/**/*",
+  ]
+}
